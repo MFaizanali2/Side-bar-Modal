@@ -6,16 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Side bar modal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="app.js"></script>
 </head>
 
 <body>
     <div id="container">
+        <div id="navbar">
+            <button id="icon" onclick="icon();"><i class="fa-solid fa-xmark"></i></button>
+            <h1>navbar</h1>
+            <div id="nav">
+                <ul><li><a href="#">Home</a></li></ul>
+                <ul><li><a href="#">About</a></li></ul>
+                <ul><li><a href="#">Contact</a></li></ul>
+                <ul><li><a href="#">Potfolio</a></li></ul>
+                <ul><li><a href="#">Service</a></li></ul>
+            </div>
+
+        </div>
+
         <div id="header">
             <!-- <img src="image/logo.webp" alt="logo image" id="logo"> -->
             <h1>Web Dev</h1>
-            <a href="#">Menu</a>
+            <a href="#" onclick="menu();"><i class="fa-solid fa-bars"></i></a>
         </div>
+
+
         <div id="content">
             <h1>Hello <br> i'm Faizan</h1>
             <p>Curently i'm Learning javascript and i am excited to leran react js</p>
@@ -27,6 +45,7 @@
                 <input type="text" placeholder="PLz Enter Email">
                 <input type="number" placeholder="PLz Enter Your number">
                 <input type="text" placeholder="PLz Enter Your password">
+                <input type="text" placeholder="PLz Enter Your confirm password">
             </div>
             <div id="btn">
                 <button onclick="hide();">Hide Modal</button>
