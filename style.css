@@ -9,3 +9,9 @@ html,body{
     height: 100vh;
     font-family: "poppins";
 }
+body{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)) ,url(image/developer.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
