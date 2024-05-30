@@ -9,9 +9,158 @@ html,body{
     height: 100vh;
     font-family: "poppins";
 }
-body{
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.7)) ,url(image/developer.jpg);
+#container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)) ,url(image/developer.jpg);
     background-size: cover;
     background-position: center;
     object-fit: cover;
 }
+#header{
+    width: 100%;
+    height: 15%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* #header #logo{
+    width: 100px;
+    border-radius: 8px;
+    margin-left: 50px;
+} */
+#header h1{
+    margin-left: 50px;
+    border-bottom: 3px solid gray;
+    /* color: rgb(135, 92, 175); */
+    color: gray;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+#header h1:hover{
+    color: darkgray;
+}
+#header a{
+    margin-right: 50px;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+#header a:hover{
+    border-radius: 8px;
+    background-color: #fff;
+    color: rgba(15, 14, 14, 0.3);
+}
+#content{
+    /* font-size: 2.5rem; */
+    position: absolute;
+   
+    width: 50%;
+    height: 60%;
+    left: 10%;
+    top: 28%;
+}
+#content h1{
+    font-size: 3.5rem;
+    color: gray;
+}
+#content p{
+    font-size: 2rem;
+    color: gray;
+}
+#content button{
+    padding: 12px 20px;
+    outline: none;
+    border: 3px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: gray;
+    transition: 0.7s;
+}
+#content button:hover{
+    background-color: gray;
+    color: darkgray;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    overflow: hidden;
+}
+#footer{
+    width: 100%;
+    height: 12%;
+    color: gray;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#modal{
+    width: 40%;
+    height: 70%;
+    background-color: #fff;
+    position: absolute;
+    left: 30%;
+    border-radius: 8px;
+    display: none;
+}
+#modal h1{
+    color: gray;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
+#modal input{
+    width: 80%;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 10%;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 208, 208);
+    border-radius: 8px;
+    color: #000;
+    font-size: 1.5rem;
+}
+#btn{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#btn button{
+    padding: 12px 20px;
+    outline: none;
+    border: 3px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: gray;
+    transition: 0.7s;
+}
+#btn button:hover{
+    background-color: gray;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+/* #input{
+    margin-top: 20px;
+
+} */
